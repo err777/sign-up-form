@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 15px;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #242731;
+  padding-left: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #cce6f5;
+  color: #242731;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  max-width: 1440px;
+  min-width: 350px;
+  background-color: #fff;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 45px 45px 0 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+}
+.header__logo:hover {
+  opacity: 0.7;
+}
+
+.step {
+  margin: 55px 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step__circle {
+  width: 12px;
+  height: 12px;
+  border: thin solid #B9B9C3;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.step__circle--blue {
+  background-color: #007AFF;
+  border: none;
+}
+.step__line {
+  width: 40px;
+  height: 1px;
+  margin-right: 8px;
+  background-color: #B9B9C3;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 auto;
+  padding-left: 150px;
+  width: 610px;
+}
+.registration__note {
+  margin-bottom: 32px;
+  color: #575F6E;
+  padding: 0 15px;
+}
+.registration__button {
+  width: 140px;
+  height: 50px;
+  border-radius: 4px;
+  border: thin solid #B9B9C3;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #fff;
+}
+.registration__button:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.49);
+}
+.registration__button--blue {
+  background-color: #007AFF;
+  color: #fff;
+  width: 170px;
+  font-family: "Poppins", sans-serif;
+}
+
+.notice {
+  width: 100%;
+  min-height: 68px;
+  padding: 16px;
+  background-color: #F0F2F4;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.notice--closed {
+  display: none;
+}
+.notice__locker, .notice__cross {
+  min-width: 15px;
+  min-height: 15px;
+}
+.notice__cross:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.notice__text {
+  margin: auto 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.phone-enter-form {
+  font-weight: 400;
+  padding: 32px;
+  margin-bottom: 32px;
+  width: 100%;
+  height: 160px;
+  border: thin solid #E2E4E5;
+  border-radius: 8px;
+}
+.phone-enter-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.phone-enter-form__item {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.phone-enter-form__label {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.phone-enter-form__select, .phone-enter-form__input {
+  padding: 0 7px 0 15px;
+  width: 80px;
+  height: 44px;
+  border: none;
+  border-bottom: thin solid #B9B9C3;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.phone-enter-form__select {
+  margin-right: 16px;
+}
+.phone-enter-form__input {
+  width: 100%;
+  margin-right: 16px;
+}
+
+.phone-confirm-form {
+  font-weight: 400;
+  padding: 16px;
+  margin-bottom: 32px;
+  width: 100%;
+  height: 80px;
+  border: thin solid #E2E4E5;
+  border-radius: 8px;
+}
+.phone-confirm-form__wrapper {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.phone-confirm-form__item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.phone-confirm-form__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #575F6E;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+.phone-confirm-form__checkMark {
+  margin-right: 5px;
+}
+.phone-confirm-form__input {
+  width: 100%;
+  color: #000000;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+.phone-confirm-form__pencil {
+  cursor: pointer;
+}
+.phone-confirm-form__pencil:hover {
+  opacity: 0.7;
+}
+
+.phone-confirm-code-form {
+  font-weight: 400;
+  margin-bottom: 32px;
+  width: 100%;
+  height: 112px;
+}
+.phone-confirm-code-form__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.phone-confirm-code-form__item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.phone-confirm-code-form__label {
+  color: #575F6E;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+.phone-confirm-code-form__label--upper {
+  color: black;
+  font-size: 13px;
+}
+.phone-confirm-code-form__input {
+  font-size: 40px;
+  width: 100%;
+  color: #000000;
+  letter-spacing: 10px;
+  border: none;
+  border-bottom: thin solid #007AFF;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+}
+.phone-confirm-code-form__again {
+  min-width: 144px;
+  height: 32px;
+  margin: auto 16px auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-confirm-code-form__icon {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.phone-confirm-code-form__text {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #007AFF;
+}
+.phone-confirm-code-form__again:hover {
+  opacity: 0.7;
+}
+
+.email-form {
+  padding: 32px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  width: 100%;
+  height: 270px;
+  border: thin solid #E2E4E5;
+  border-radius: 8px;
+}
+.email-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 32px;
+}
+.email-form__item {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.email-form__label {
+  color: #242426;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.email-form__input {
+  font-size: 18px;
+  width: 100%;
+  color: #242426;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+  border-bottom: thin solid #B9B9C3;
+}
+
+.pass {
+  height: 100px;
+}
+.pass__label {
+  color: #242426;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.pass__input {
+  font-size: 18px;
+  letter-spacing: 7px;
+  width: 100%;
+  color: #242426;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+  border-bottom: thin solid #B9B9C3;
+  padding: 8px 40px 8px 16px;
+}
+.pass__check {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #34C759;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 45px 45px 0 45px;
+  }
+
+  .step {
+    margin-top: 135px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 45px 25px 0 25px;
+  }
+
+  .registration {
+    padding: 0;
+    align-items: center;
+    width: 100%;
+  }
+  .registration__note {
+    text-align: center;
+  }
+
+  .notice {
+    border-radius: 0;
+  }
+  .notice__text {
+    text-align: center;
+  }
+
+  .phone-enter-form {
+    height: 70px;
+    padding: 0 32px;
+    border: none;
+  }
+  .phone-enter-form__input {
+    margin-right: 0;
+  }
+
+  .phone-confirm-form {
+    border: none;
+    background-color: #EFF7FF;
+  }
+  .phone-confirm-form__input {
+    background-color: #EFF7FF;
+  }
+
+  .phone-confirm-code-form {
+    padding: 0 24px;
+  }
+  .phone-confirm-code-form__wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+  .phone-confirm-code-form__again {
+    margin: 0;
+    justify-content: start;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
